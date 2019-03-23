@@ -1,7 +1,7 @@
 
 # active-win-log
 
-> A command line for logging time spent viewing application windows
+> A command line tool for logging time spent viewing application windows.
 
 <!--[]-->
 
@@ -25,21 +25,27 @@
 ```
 $ awl -?
 
-Usage: active-win-log <options>
-
-awl             Start the active-window-log (if not already started) and display window usage for the last 24 hours
-awl -l <number> Display a listing of window activity for the last <number> days
-
-
+Usage: awl <options>
+awl           Start monitoring the active window
+awl -?        This help information
+awl -l n      Display statistics for the last "n" days in the log
+awl -q        Stop monitoring
 Log location: /users/<your user name>/active-win-log/awl.json
-
 
 ```
 
+## Sample output
+Command: `awl -l 1`
+![screen shot](screenshot.png)
+
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+PRs are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Motivation
+
+I use this tool to give me a better sense of how I am spending my time when working from home. The tool checks
+to see what the active window is (using [active-win](https://www.npmjs.com/package/active-win)) _every 5 seconds_. 
 
 ## License
 
