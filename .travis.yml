@@ -1,0 +1,25 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+
+node_js:
+  - '8'
+  - '10'
+
+script:
+  - npm run pre-release
+
+after_success:
+  - npm run upload-coverage
+  - npm run travis-deploy-once "npm run semantic-release"
+
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
+
+notifications:
+  email:
+    recipients:
+      - u_glow@hotmail.com

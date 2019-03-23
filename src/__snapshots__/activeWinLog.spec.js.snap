@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActiveWinLog getStats() should render stats from a (fixture) log file 1`] = `
+"[33m[1m[4m2019-03-20                                          [24m[22m[39m[33m[1m[4m00:00:50[24m[22m[39m
+[32mWebStorm                                            [39m[32m[1m00:00:05[22m[39m
+  [36mword-domination-plan-703                          [39m[36m00:00:05[39m
+[32mSublime                                             [39m[32m[1m00:00:05[22m[39m
+  [36mmanifesto.txt                                     [39m[36m00:00:05[39m
+[32mGoogle                                              [39m[32m[1m00:00:40[22m[39m
+  [36mHow to be good at things                          [39m[36m00:00:40[39m
+
+[33m[1m[4m2019-03-22                                          [24m[22m[39m[33m[1m[4m00:00:40[24m[22m[39m
+[32mWebStorm                                            [39m[32m[1m00:00:05[22m[39m
+  [36mactive-win-log [/mydev/code/npm/active-win-log]   [39m[36m00:00:05[39m
+[32mSublime Text                                        [39m[32m[1m00:00:05[22m[39m
+  [36mawl.json                                          [39m[36m00:00:05[39m
+[32mGoogle Chrome                                       [39m[32m[1m00:00:30[22m[39m
+  [36mtable - npm                                       [39m[36m00:00:05[39m
+  [36mCreating a real-world CLI app with Node           [39m[36m00:00:20[39m
+  [36m<blank>                                           [39m[36m00:00:05[39m
+"
+`;
+
+exports[`ActiveWinLog showHelp() should display a help message 1`] = `
+Array [
+  "",
+  "Usage: awl <options>",
+  "awl           Start monitoring the active window",
+  "awl -?        This help information",
+  "awl -l n      Display statistics for the last \\"n\\" days in the log",
+  "awl -q        Stop monitoring",
+  "Global log location: foo.json",
+]
+`;
