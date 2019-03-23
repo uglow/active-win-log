@@ -44,7 +44,7 @@ PRs are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Motivation
 
-I use this tool to give me a better sense of how I am spending my time when working from home. The tool checks
+I use this tool to give me a better sense of how I am spending my time when working out of the office. The tool checks
 to see what the active window is (using [active-win](https://www.npmjs.com/package/active-win)) _every 5 seconds_. 
 
 ## License
