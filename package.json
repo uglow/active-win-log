@@ -3,11 +3,19 @@
   "version": "0.0.0-development",
   "description": "A window logging tool that tracks application usage",
   "keywords": [
-    "developer",
-    "diary",
-    "journal",
-    "notes",
-    "notes"
+    "activity",
+    "time-tracker",
+    "timesheet",
+    "usage",
+    "macos",
+    "linux",
+    "windows",
+    "app",
+    "application",
+    "window",
+    "win",
+    "active",
+    "focused"
   ],
   "license": "MIT",
   "author": "Brett Uglow <u_glow@hotmail.com> (http://uglow.github.io/)",
@@ -35,7 +43,7 @@
     "test:report": "jest --no-cache --coverage --json --outputFile=test-reports/unit/unit.json",
     "test:reporthtml": "jest --coverage",
     "test:watch": "jest --watchAll",
-    "upload-coverage": "jest --coverage | coveralls",
+    "upload-coverage": "jest --coverage && cat ./test-reports/coverage/lcov.info | coveralls",
     "lint": "eslint --max-warnings=0 --fix src/",
     "verify": "eslint --max-warnings=0 src/",
     "travis-deploy-once": "travis-deploy-once"
