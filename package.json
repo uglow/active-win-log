@@ -81,7 +81,7 @@
     "mock-stdin": "0.3.1",
     "npm-run-all": "4.0.2",
     "prettier": "1.16.4",
-    "semantic-release": "15.13.8",
+    "semantic-release": "17.2.3",
     "travis-deploy-once": "5.0.11",
     "yorkie": "2.0.0"
   },
