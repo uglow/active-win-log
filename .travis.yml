@@ -1,16 +1,15 @@
-sudo: false
 language: node_js
 
 node_js:
-  - '8'
   - '10'
 
 script:
-  - npm run pre-release
+  - npm run verify
+  - npm run test:report
 
 after_success:
   - npm run upload-coverage
-  - npm run travis-deploy-once "npm run semantic-release"
+  - npm run semantic-release
 
 branches:
   except:

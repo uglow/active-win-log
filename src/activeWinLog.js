@@ -34,7 +34,6 @@ class ActiveWinLog {
   async init() {
     try {
       await statAsync(this.logFile);
-      return;
     } catch (err) {
       // Create directory & file
       try {
@@ -74,7 +73,7 @@ class ActiveWinLog {
       // no need to do anything, we will bail shortly
     }
 
-    // If there are no active widows, don't log anything
+    // If there are no active windows, don't log anything
     if (!winInfo) {
       return;
     }

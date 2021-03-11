@@ -34,8 +34,12 @@ async function run(args = '') {
   console.log('Running active-win-log in the background. Type `awl -q` to stop it running.');
 
   // Now run the script in the background again
-  require('daemonize-process')();
-  awl.run();
+  if (process.env.DEBUG_MODE === 'true') {
+    awl.run();
+  } else {
+    require('daemonize-process')();
+    awl.run();
+  }
 }
 
 module.exports = {
