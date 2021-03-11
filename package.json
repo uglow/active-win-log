@@ -1,6 +1,6 @@
 {
   "name": "active-win-log",
-  "version": "0.0.0-development",
+  "version": "1.0.3",
   "description": "A window logging tool that tracks application usage",
   "keywords": [
     "activity",
