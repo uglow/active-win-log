@@ -36,17 +36,16 @@
   ],
   "scripts": {
     "pre-release": "npm-run-all verify test:report ",
-    "semantic-release": "semantic-release",
     "start": "./bin/index.js",
     "test": "npm run test:unit",
     "test:unit": "jest",
     "test:report": "jest --no-cache --coverage --json --outputFile=test-reports/unit/unit.json",
     "test:reporthtml": "jest --coverage",
     "test:watch": "jest --watchAll",
-    "upload-coverage": "jest --coverage && cat ./test-reports/coverage/lcov.info | coveralls",
+    "upload-coverage": "coveralls < test-reports/coverage/lcov.info",
     "lint": "eslint --max-warnings=0 --fix src/",
     "verify": "eslint --max-warnings=0 src/",
-    "travis-deploy-once": "travis-deploy-once"
+    "semantic-release": "semantic-release"
   },
   "config": {
     "commitizen": {
@@ -61,13 +60,15 @@
     "pre-push": "npm run pre-release"
   },
   "dependencies": {
-    "active-win": "4.1.0",
+    "active-win": "6.3.0",
     "ansi-colors": "3.2.4",
     "daemonize-process": "2.0.1",
     "userhome": "1.0.0"
   },
   "devDependencies": {
-    "coveralls": "^3.0.3",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/git": "9.0.0",
+    "coveralls": "3.1.0",
     "cross-env": "5.0.5",
     "cz-customizable": "5.2.0",
     "cz-customizable-ghooks": "1.5.0",
@@ -81,8 +82,7 @@
     "mock-stdin": "0.3.1",
     "npm-run-all": "4.0.2",
     "prettier": "1.16.4",
-    "semantic-release": "17.2.3",
-    "travis-deploy-once": "5.0.11",
+    "semantic-release": "17.4.1",
     "yorkie": "2.0.0"
   },
   "engines": {
