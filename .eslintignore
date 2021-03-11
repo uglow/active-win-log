@@ -4,3 +4,6 @@ bower_components/*
 
 # Config folder (optional - you might want to lint this...)
 config/*
+
+# Ignore the commitMessageConfig.js, as it has specific formatting
+commitMessageConfig.js

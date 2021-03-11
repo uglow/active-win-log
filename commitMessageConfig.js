@@ -17,6 +17,7 @@ module.exports = {
 
   scopes: [
     {name: 'build'},
+    {name: 'ci'},
     {name: 'log'},
     {name: 'readme'},
   ],
